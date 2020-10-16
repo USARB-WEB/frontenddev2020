@@ -1,0 +1,28 @@
+.patrat{
+    width: 100px;
+    height: 100px;
+    border: 1px solid lightgray;
+}
+
+.cerc{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+.rosu{
+    background: red;
+}
+
+.galben{
+    background: rgb(160, 180, 46);
+}
+
+.albastru{
+    background: #00aeff;
+}
+
+.verde{
+    background: #00FF00;
+}

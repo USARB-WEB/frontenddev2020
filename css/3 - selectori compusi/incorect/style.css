@@ -1,0 +1,52 @@
+.patrat_rosu{
+    width: 100px;
+    height: 100px;
+    border: 1px solid lightgray;
+    background: red;
+}
+
+.patrat_galben{
+    width: 100px;
+    height: 100px;
+    border: 1px solid lightgray;
+    background: yellow;
+}
+
+.patrat_albastru{
+    width: 100px;
+    height: 100px;
+    border: 1px solid lightgray;
+    background: #0000FF;
+}
+
+.cerc_verde{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    background: green;
+}
+
+.cerc_galben{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    background: yellow;
+}
+
+.cerc_rosu{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    background: red;
+}
+
+.cerc_albastru{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    background: blue;
+}

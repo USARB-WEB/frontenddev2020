@@ -1,0 +1,20 @@
+* {
+    border: 1px solid gray;
+    background: grey;
+}
+
+div{
+    background: blue;
+}
+
+.clasa12{
+    background: green;
+}
+
+#deosebit{
+    background: pink;
+}
+
+#mai_deosebit{
+    background: coral;
+}
