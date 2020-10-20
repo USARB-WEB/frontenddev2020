@@ -1,0 +1,51 @@
+#container, #container2, #container3, #container4{
+    font-size: 0;
+    border: 1px solid green;
+    width: 600px;
+}
+#container .element{
+    border: 1px solid red;
+    width: 88px;
+    height: 88px;
+    font-size: 35px;
+    display: inline-block;
+    margin: 5px;
+}
+
+#container2 .element{
+    border: 1px solid red;
+    width: 88px;
+    height: 88px;
+    font-size: 35px;
+    display: inline-block;
+    background: skyblue;
+    padding: 5px;
+}
+
+#container3 .element{
+    border: 1px solid red;
+    width: 88px;
+    height: 88px;
+    font-size: 35px;
+    display: inline-block;
+    background: skyblue;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+#container4 .element{
+    border: 1px solid red;
+    width: 88px;
+    height: 88px;
+    font-size: 35px;
+    display: inline-block;
+    background: skyblue;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#element4{
+    margin-left: 40px !important;
+}
+

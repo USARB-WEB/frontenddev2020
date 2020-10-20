@@ -1,0 +1,24 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+.page{
+    display: flex;
+}
+
+.left{
+    width: 25%;
+    height: 400px;
+    background: saddlebrown;
+    font-size: 20px;
+}
+
+.right{
+    width: 75%;
+    height: 400px;
+    background: seagreen;
+    font-size: 20px;    
+}

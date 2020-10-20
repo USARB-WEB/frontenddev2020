@@ -1,0 +1,26 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 0;
+}
+
+.left{
+    width: 25%;
+    height: 400px;
+    background: saddlebrown;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.right{
+    width: 75%;
+    height: 400px;
+    background: seagreen;
+    display: inline-block;
+    font-size: 20px;
+    
+}

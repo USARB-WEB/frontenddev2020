@@ -1,0 +1,11 @@
+.element{
+    background: red;
+    width: 300px;
+    height: 300;
+}
+
+#element{
+    background: blue;
+    width: 300px;
+    height: 300;
+}
