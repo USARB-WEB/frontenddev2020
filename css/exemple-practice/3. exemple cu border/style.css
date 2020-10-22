@@ -1,0 +1,29 @@
+.card{
+    border: 1px solid gray;
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(78,9,121,0.465721322708771) 12%, rgba(255,255,255,1) 100%);
+    box-shadow: 13px 10px 5px 0px rgba(0,0,0,0.75);
+    padding: 15px;
+}
+.card h2{
+    font-family: Georgia;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card img{
+    width: 33%;
+}
+
+.card .info{
+    display: inline-block;
+}
+
+.card .info strong{
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+}
