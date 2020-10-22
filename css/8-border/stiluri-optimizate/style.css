@@ -1,0 +1,24 @@
+.element{
+    width: 400px;
+    height: 200px;
+}
+
+.green-dotted{
+    border-color: #00FF00;
+    border-style: dotted;
+}
+.red-dotted{
+    border-color: #FF0000;
+    border-style: dotted;
+}
+
+.green-solid{
+    border-color: #00FF00;
+    border-style: solid
+}
+
+.green-solid-10{
+    border-color: #00FF00;
+    border-style:solid;
+    border-width: 10px;
+}

@@ -1,0 +1,23 @@
+.element{
+    width: 400px;
+    height: 200px;
+}
+
+.border-color-red{
+    border-color: red;
+}
+.border-color-green{
+    border-color: #00FF00;
+}
+
+.border-style-solid{
+    border-style: solid;
+}
+
+.border-width-10{
+    border-width: 10px;
+}
+
+.border-style-dotted{
+    border-style: dotted;
+}
