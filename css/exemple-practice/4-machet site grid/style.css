@@ -1,0 +1,43 @@
+header{
+    background: blue;
+    grid-area: header;
+}
+
+nav{
+    background: violet;
+    grid-area: nav;
+}
+
+aside{
+    background: yellow;
+}
+
+section{
+    background: green;
+    grid-area: section;
+}
+
+footer{
+    background: gray;
+    grid-area: footer;
+}
+
+#aside-left{
+    grid-area: aleft;
+}
+
+#aside-right{
+    grid-area: aright;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "aleft section aright"
+    "footer footer footer"
+    ;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 100px 40px 300px 100px;
+}
