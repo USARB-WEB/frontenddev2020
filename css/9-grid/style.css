@@ -1,0 +1,139 @@
+.grid{
+    display: grid;
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+    height: 400px;
+}
+
+.grid .element{
+    border: 1px solid red;
+}
+
+
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(2, 50px) auto repeat(2, 50px);
+    height: 400px;
+}
+
+.grid2 .element{
+    border: 1px solid red;
+}
+
+.grid3{
+    display: grid;
+    width: 160px;
+    height: 160px;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    border: 1px solid blue;
+}
+
+.grid3 .element{
+    border: 1px solid olive;
+}
+
+.grid4{
+    display: grid;
+    width: 160px;
+    height: 160px;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    gap: 5px 5px;
+    border: 1px solid red;
+    justify-items: center;
+    align-items: end;
+    justify-content: end;
+}
+
+.grid4 .element{
+    border: 1px solid lightcoral;
+    width: 30px;
+    height: 25px;
+}
+
+
+.grid5{
+    border: 1px solid blue;
+    display: grid;
+    justify-content: right;
+    align-content: center;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    width: 300px;
+    height: 300px;
+}
+
+.grid5 .element{
+    border: 1px solid gray;
+}
+
+.grid6{
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    width: 300px;
+    grid-auto-rows: 150px;
+    grid-auto-columns: 50px;
+}
+
+.grid6 .element{
+    border: 1px solid cyan;
+}
+
+.grid6 .first{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.grid6 .sixt{
+    grid-column: 2 / 4;
+}
+
+.fractii{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid green;
+    width: 300px;
+}
+
+.fractii .element{
+    border: 1px solid cyan;
+}
+
+.fractii2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid blue;
+    width: 300px;
+}
+
+.fractii2 .element{
+    border: 1px solid red;
+}
+
+.fractii3{
+    display: grid;
+    grid-template-columns: 1fr 50px 2fr;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid rgb(0, 255, 42);
+    width: 100%;
+}
+
+.fractii3 .element{
+    border: 1px solid rgb(160, 35, 160);
+}
+
+
+.card{
+    display: none;
+    /*display: grid;*/
+    grid-template-columns: 160px 160px 160px;
+    grid-template-rows: 50px 50px 50px;
+}
