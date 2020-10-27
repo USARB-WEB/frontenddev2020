@@ -1,0 +1,117 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "aleft section aright"
+    "footer footer footer"
+    ;
+    grid-template-columns: 250px auto 200px;
+    grid-template-rows: 100px 40px auto 100px;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    background: url(img/bg.jpg);
+    background-attachment: fixed;
+}
+
+header{
+    background: rgb(220, 243, 217);
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+}
+
+header #logo{
+    height: 100px;
+}
+
+header h1{
+    text-align: center;
+}
+
+nav{
+    grid-area: nav;
+    position: sticky;
+    top: 0px;
+}
+
+aside{
+
+    max-height: 400px;
+}
+
+section{
+    background: whitesmoke;
+    grid-area: section;
+    padding: 20px;
+    font-size: 1em;
+    text-align: justify;
+}
+
+footer{
+    background: rgb(0, 0, 0);
+    grid-area: footer;
+    color: white;
+    text-align: center;
+}
+
+#aside-left{
+    grid-area: aleft;
+}
+
+#aside-right{
+    grid-area: aright;
+}
+
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a{
+    background: rgb(50, 98, 187);
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(214, 214, 214);
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.menu li a:hover{
+    background: rgb(146, 179, 216);
+    color: blanchedalmond;
+}
+
+
+.menu-vertical{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 40px);
+}
+
+.menu-vertical li a{
+    background: rgb(130, 131, 167);
+}
+
+#chat{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 50px;
+    background: grey;
+}
