@@ -1,0 +1,30 @@
+.element{
+    width: 200px;
+    height: 200px;
+    background: grey;
+    border: 1px solid red;
+}
+
+#el-1{
+    top: 110px;
+    left: 30px;
+    background: green;
+    z-index: 2;
+    position: fixed;
+}
+
+#el-2{
+    top: 80px;
+    left: 50px;
+    background: violet;
+    z-index: 4;
+    position: fixed;
+}
+
+#el-3{
+    top: 30px;
+    left: 150px;
+    background: yellow;
+    z-index: -5;
+    position: fixed;
+}
