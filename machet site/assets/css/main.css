@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+
+body#home-page{ 
+    grid-template-columns: 1fr 4fr 2fr 1fr;
+    grid-template-rows: 200px 40px auto 100px;
+    grid-template-areas: 
+    "header header header header"
+    ". nav nav ."
+    ". section aside ."
+    "footer footer footer footer"
+    ;
+}
+
+body#photos-page{
+    grid-template-columns: 1fr 4fr 2fr 1fr;
+    grid-template-rows: 200px 40px auto 100px;
+    grid-template-areas: 
+    "header header header header"
+    ". nav nav ."
+    ". section section ."
+    "footer footer footer footer"
+    ;
+}
+
+header{
+    background: #E6F3FF;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+header img{
+    height: 200px;
+}
+
+header h1{
+    color: #2F72D6;
+    font-size: 60px;
+    text-align: center;
+    line-height: 200px;
+    margin: 0;
+}
+
+nav{
+    background: rgba(196, 196, 196, 0.21);
+    grid-area: nav;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 5px;
+}
+
+
+nav ul li a{
+    background:#768AF3;
+    border-radius: 10px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active{
+    background:  #2E42AB;
+}
+
+nav ul li a:hover{
+    background:  #2E42AB;
+}
+
+section{
+    background: #eee;
+    min-height: 400px;
+    grid-area: section;
+}
+
+section h2{
+    padding-left: 30px;
+}
+
+section p{
+    padding: 15px;
+    text-align: justify;
+}
+
+section p#photo-gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+section p#photo-gallery img{
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+section p#photo-gallery img:hover{
+    opacity: 0.5;
+    transform: rotate(5deg) scale(0.7);
+}
+
+aside{
+    grid-area: aside;
+    background: #ddd;
+    text-align: center;
+    padding-top: 30px;
+}
+
+aside img{
+    width: 150px;
+}
+
+footer{
+    background: #140731;
+    color: white;
+    grid-area: footer;
+    text-align: center;
+    line-height: 100px;
+}
