@@ -83,6 +83,7 @@ section{
     background: #eee;
     min-height: 400px;
     grid-area: section;
+    padding: 15px;
 }
 
 section h2{
@@ -90,7 +91,6 @@ section h2{
 }
 
 section p{
-    padding: 15px;
     text-align: justify;
 }
 
@@ -111,6 +111,14 @@ section p#photo-gallery img:hover{
     transform: rotate(5deg) scale(0.7);
 }
 
+section ul#video-gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    list-style: none;
+    padding: 0;
+}
+
 aside{
     grid-area: aside;
     background: #ddd;
@@ -128,4 +136,69 @@ footer{
     grid-area: footer;
     text-align: center;
     line-height: 100px;
+}
+
+#video-gallery li h3{
+    text-align: center;
+    color: darkblue;
+    font-size: 20px;
+}
+
+#contact-form{
+    display: grid;
+    gap: 10px;
+    margin: 10px;
+}
+
+#contact-form input[type=submit]{
+    background-color: darkgreen;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#contact-form input[type=submit]:hover{
+    opacity: 0.8;
+}
+
+#contact-form input, #contact-form select{
+    padding: 5px;
+}
+
+#contact-form label{
+    padding: 5px;
+}
+
+#contact-form select option{
+    padding: 10px;
+}
+
+/* Card info */
+.card{
+    border: 1px solid gray;
+    width: 94%;
+    height: 250px;
+    border-radius: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(78,9,121,0.465721322708771) 12%, rgba(255,255,255,1) 100%);
+    padding: 3%;
+}
+.card h2{
+    font-family: Georgia;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card img{
+    width: 30%;
+}
+
+.card .info{
+    display: inline-block;
+}
+
+.card .info strong{
+    width: 80px;
+    display: inline-block;
+    text-align: right;
 }
