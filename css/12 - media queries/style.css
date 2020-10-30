@@ -1,0 +1,77 @@
+/*  Panela de navigare */
+nav{
+    background: rgba(196, 196, 196, 0.21);
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 5px;
+}
+
+
+nav ul li a{
+    background:#768AF3;
+    border-radius: 10px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active{
+    background:  #2E42AB;
+}
+
+nav ul li a:hover{
+    background:  #2E42AB;
+}
+
+/* Drapelul */
+
+#drapel{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px;
+}
+
+#drapel #rosu{
+    background: red;
+}
+
+#drapel #albastru{
+    background-color: blue;
+}
+
+#drapel #galben{
+    background: yellow;
+}
+
+#only-print, #copyright-print{
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    nav ul{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #drapel{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 300px);
+    }
+}
+
+@media print{
+    #only-print, #copyright-print{
+        display: block;
+    }
+}
