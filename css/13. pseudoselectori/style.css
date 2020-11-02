@@ -1,0 +1,32 @@
+ol li{
+    border: 1px solid red;
+}
+
+ol li:first-child{
+    background: red;
+}
+
+ol li:last-child{
+    background-color: blue;
+}
+
+ol li:nth-child(4){
+    font-weight: bold;
+    color: red;
+}
+
+ol li:nth-child(even){
+    font-size: 20px;
+}
+
+ol li:nth-child(odd){
+    font-size: 40px;
+}
+
+ol li:nth-child(5n-2){
+    width: 50%;
+}
+
+ol li:nth-child(even):hover{
+    background: cyan;
+}
