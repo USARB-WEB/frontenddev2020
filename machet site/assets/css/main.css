@@ -155,6 +155,7 @@ footer{
     border-radius: 5px;
     color: white;
     text-transform: uppercase;
+    margin-left: 50%;
 }
 
 #contact-form input[type=submit]:hover{
@@ -166,11 +167,15 @@ footer{
 }
 
 #contact-form label{
+    padding: 15px;
+}
+
+#contact-form select{
     padding: 5px;
 }
 
 #contact-form select option{
-    padding: 10px;
+    
 }
 
 /* Card info */
