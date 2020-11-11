@@ -51,3 +51,4 @@ console.log(numbers);
 console.log(numbers.filter(element => element % 2 === 0));
 console.log(numbers.map(element => element ** 2));
 console.log(numbers.find(element => element === 8));
+console.log(numbers.findIndex(element => element === 18));
