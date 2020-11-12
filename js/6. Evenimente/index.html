@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    
+
+    <button onclick="alert('I am a Button')">ClickMe</button>
+
+    <button id="superButton">SuperButton</button>
+
+
+    <input type="text" onkeydown="alert('keydown event')" onkeyup="alert('keyup event')" onkeypress="alert('keypress event')">
+
+    <hr>
+
+    <input type="text" onkeyup="setName()" id="nameInput">
+    
+    <button onclick="setName()">setName</button>
+    <div id="name">empty name</div>
+
+    
+</body>
+</html>
