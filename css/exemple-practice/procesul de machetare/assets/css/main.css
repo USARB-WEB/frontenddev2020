@@ -1,0 +1,41 @@
+body{
+    margin: 0 auto;
+    width: 952px;
+    padding: 0;
+}
+
+header{
+    margin-top: 23px;
+    border: 1px solid red;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+header nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+section{
+    border: 1px solid red;
+}
+
+section#main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 5em;
+}
+
+section#main div{
+    display: grid;
+    grid-template-rows: 200px 200px 30px;
+}
+
+footer{
+    border: 1px solid red;
+    height: 100px;
+}
