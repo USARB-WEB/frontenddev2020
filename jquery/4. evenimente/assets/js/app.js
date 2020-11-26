@@ -36,6 +36,15 @@ $(document).ready(() => {
     }, 3000);
 
 
+    setInterval(() => {
+        $("#ball").css({
+            left: "+=50",
+            top: "+=30"
+        });
+        
+    }, 2000);
+
+
     $(document).keydown(function(e){
         switch (e.which){
         case 37:    //left arrow key
