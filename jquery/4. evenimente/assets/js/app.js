@@ -20,6 +20,20 @@ $(document).ready(() => {
         });        
     });
 
+    $("#mario").on("click", () => {
+        $("#mario").fadeOut();
+    })
+
+    setInterval(() => {
+        if(!$("#mario").is(":visible")){
+            $("#mario").fadeIn();
+            $("#mario").css({
+                left: "0",
+                top: "0"
+            });
+        }
+        
+    }, 3000);
 
 
     $(document).keydown(function(e){
@@ -28,7 +42,7 @@ $(document).ready(() => {
             $("#mario").css({
                 left: "-=50"
             });
-            $("#mario").css("background-position", "-53 0px -30px");
+            $("#mario").css("background-position", "-530px -30px");
             break;
         case 38:    //up arrow key
             $("#mario").css({
@@ -43,7 +57,7 @@ $(document).ready(() => {
             break;
         case 40:    //bottom arrow key
             $("#mario").css({
-                left: "+=50"
+                top: "+=50"
             });
             break;
         }
