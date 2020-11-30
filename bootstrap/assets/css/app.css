@@ -1,3 +1,4 @@
-.alert-success{
-    background: green;
+header{
+    background-image: url(../img/header.jpg);
+    height: 400px;
 }
