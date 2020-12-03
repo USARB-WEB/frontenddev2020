@@ -20,5 +20,61 @@ $(document).ready(function(){
 
         $("#shadow").click(() => {
             $("#shadow, #modal").fadeOut();
-        });
+		});
+		
+
+		const validateFeedbackForm = () => {
+			const name = $("#name").val();
+			const email = $("#email").val();
+			const phone = $("#phone").val();
+			const country = $("#country").val();
+			const message = $("#message").val();
+			let formIsValid = false;
+
+			if(name === ""){
+				$("#name").addClass("has-error");
+			} else{
+				$("#name").removeClass("has-error");
+			}
+
+			if(email === ""){
+				$("#email").addClass("has-error");
+			} else{
+				$("#email").removeClass("has-error");
+			}
+
+			
+			if(phone === ""){
+				$("#phone").addClass("has-error");
+			} else{
+				$("#phone").removeClass("has-error");
+			}
+
+
+			if(message === ""){
+				$("#message").addClass("has-error");
+			} else{
+				$("#message").removeClass("has-error");
+			}
+
+			if(name !== "" && email !== "" && phone !== "" && message !== ""){
+				return true;
+			} else {
+				return false;
+			}
+			//varianta prescurtata
+			//return name !== "" && email !== "" && phone !== "" && message !== "";
+		}
+
+		$("#sendMessageButton").click(() => {
+			if(validateFeedbackForm()){
+				//send to backend 
+				alert("Message sent");
+			} 
+			// else {
+			// 	alert("Form error");
+			// }
+		});
+
+
 });
