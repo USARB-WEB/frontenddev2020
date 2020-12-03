@@ -15,7 +15,15 @@ $(document).ready(function(){
         });
         
         $("#feedbackBtn").click(() => {
-            $("#shadow, #modal").fadeIn();
+			$("#name").val("")
+			$("#email").val("")
+			$("#phone").val("")
+			$("#message").val("")
+			$("#feedbackForm").fadeIn();
+			$("#messageSuccess").fadeOut(() => {
+				$("#shadow, #modal").fadeIn();
+			});
+			
         });
 
         $("#shadow").click(() => {
@@ -69,8 +77,9 @@ $(document).ready(function(){
 		$("#sendMessageButton").click(() => {
 			if(validateFeedbackForm()){
 				//send to backend 
-				alert("Message sent");
-			} 
+				$("#feedbackForm").fadeOut();
+				$("#messageSuccess").fadeIn();
+			}
 			// else {
 			// 	alert("Form error");
 			// }

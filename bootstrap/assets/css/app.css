@@ -53,3 +53,7 @@ section{
 .has-error{
     border-color: red;
 }
+
+#messageSuccess{
+    display: none;
+}

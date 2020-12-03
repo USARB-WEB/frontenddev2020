@@ -57,7 +57,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Feedback</a>
+            <a href="#" id="feedbackBtn" class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Feedback</a>
           </li>
 
           
@@ -231,7 +231,10 @@
         </button>
       </div>
       <div class="modal-body">
-        <form>
+        <div class="alert alert-success" role="alert" id="messageSuccess">
+          Message sent!
+        </div>
+        <form id="feedbackForm">
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Name:</label>
             <div class="input-group mb-3">
