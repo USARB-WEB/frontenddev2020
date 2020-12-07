@@ -1,0 +1,13 @@
+.container{
+    border: 1px solid red;
+}
+
+.row{
+    border: 3px solid blue;
+    height: 150px;
+}
+
+.row div{
+    background-color: grey;
+    border: 1px solid yellow;
+}
