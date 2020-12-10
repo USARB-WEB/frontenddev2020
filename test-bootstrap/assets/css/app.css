@@ -15,6 +15,7 @@ body{
     font-weight: bold;
     color: #3E3F43;
     letter-spacing: 0.25em;
+    background-position: left center;
 }
 
 .bordered{
@@ -46,6 +47,7 @@ body{
 
 header{
     padding-top: 7em;
+    height: 740px;
 }
 
 header div p{
@@ -63,7 +65,42 @@ header div h1{
 
 header div button{
     font-size: 16px;
-    line-height: 22px;
     color: #FFFFFF !important;
     background-color: #DAA520 !important;
+}
+
+header div img{
+    width: 100%;
+}
+
+section strong{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 98px;
+    color: #3E3F43;
+    letter-spacing: 0 !important;
+}
+
+
+
+section h2{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    
+    text-align: right;
+    color: rgba(34, 34, 34, 0.1);
+}
+
+@media screen and (max-width:575px){
+    #page-container{
+        background-image: none;
+        background-color: #F9BDBD;
+    }
+    header{
+        
+        height: auto;
+        margin-bottom: 3em;
+    }
 }

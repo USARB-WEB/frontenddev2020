@@ -16,45 +16,60 @@
 
 <body>
     <div class="container" id="page-container">
-        <nav class="row pt-4">
-            <div class="col-2 offset-1 logo">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="col-10 col-xl-2 offset-xl-1 logo">
                 WOODIES
             </div>
-            <ul class="nav justify-content-end col-8 offset-1">
-                <li class="nav-item col">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item col">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item col">
-                    <a class="nav-link" href="#">How it works</a>
-                </li>
-                <li class="nav-item col">
-                    <a class="nav-link" href="#">Categories</a>
-                </li>
-                <li class="nav-item col">
-                    <a class="nav-link" href="#">Testimony</a>
-                </li>
-                <li class="nav-item col">
-                    <a class="nav-link sign-up" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">SIGN UP</a>
-                </li>
-            </ul>
+            <div class="col-2 d-xl-none">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end row" id="navbarSupportedContent">
+                <ul class="nav justify-content-end col-10 offset-1">
+                    <li class="nav-item col">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link" href="#">How it works</a>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link" href="#">Testimony</a>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link sign-up" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">SIGN
+                            UP</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+
         <header class="row">
-            <div class="col-5 offset-1">
+            <div class="col-12 col-xl-5 d-xl-none">
+                <img src="assets/img/table.png" alt="">
+            </div>
+            <div class="col-12 col-xl-5 offset-xl-1">
                 <p>Are you looking for <strong>woodden furniture</strong> for your place?</p>
                 <h1 class="mt-5">This is the Right Place</h1>
-                <button type="button" class="btn btn-warning p-3">Explore Furniture</button>
+                <button type="button" class="btn btn-warning p-3 offset-1 offset-xl-0 col-10 col-xl-4">Explore Furniture</button>
             </div>
-            <div class="col-5 offset-1">
+            <div class="col-12 col-xl-5 offset-1 d-none d-xl-block">
                 <img src="assets/img/table.png" alt="">
             </div>
         </header>
-        <section class="row bordered">
-            <div class="col-3 offset-1">Who we are</div>
-            <div class="col-3">
-                <hr>
+        <section class="row align-middle">
+            <div class="col-3 offset-1 row"><strong class="logo align-middle">Who we are</strong></div>
+            <div class="col-3 pt-2">
+                <div class="dropdown-divider mt-5"></div>
             </div>
             <h2 class="col-4">ABOUT US</h2>
             <div class="col-5 offset-1">
@@ -69,7 +84,8 @@
                 <p>Get it easy to adjust furniture to the shape and size of your dwelling or business.</p>
             </div>
             <div class="col-3 offset-1">
-                <img src="assets/img/Script-Online-Ado-Beech-Steel-Spoon-Set-Of-3-52151704SD00001-PDP-Gallery-D-01 1 (1).png"
+                <img style="width: 100%;"
+                    src="assets/img/Script-Online-Ado-Beech-Steel-Spoon-Set-Of-3-52151704SD00001-PDP-Gallery-D-01 1 (1).png"
                     alt="">
             </div>
         </section>
