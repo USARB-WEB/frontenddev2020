@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="app">
+        {{ message }}
+    </div>
+
+    <div id="counter">
+        <button @click="decrement">-</button>
+        <input type="text" size="3" v-model="number">
+        <button @click="increment">+</button>
+        <hr>
+        {{ number }} {{number}}
+    </div>
+
+    <div id="calculator">
+        <input type="text" size="2" v-model="x">
+        + 
+        <input type="text" size="2" v-model="y">
+
+        {{ sum }}
+    </div>
+
+    <div id="validation">
+        <input type="text" v-model="text">
+        <button :disabled="text.length < 5">Registration</button>
+    </div>
+
+    <div id="calculatorAll">
+        <input type="text" size="2" v-model="x">
+        +-*/ 
+        <input type="text" size="2" v-model="y">
+
+        {{ sum }} | {{ difference }}  | {{ multiply }} | {{ devide }}
+
+    </div>
+
+    <div id="todo">
+        <ul>
+            <li v-for="(item, index ) in todoList" >{{item}} <button @click="deleteItem(index)">x</button></li>
+        </ul>
+        <input type="text" v-model="newTodo">
+        <button @click="addTodo">Add todo</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
