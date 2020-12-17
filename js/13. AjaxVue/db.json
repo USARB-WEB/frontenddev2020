@@ -1,0 +1,19 @@
+{
+  "persons": [
+    {
+      "id": 1,
+      "name": "Mihai Eminescu",
+      "phone": "+37311111111"
+    },
+    {
+      "id": 2,
+      "name": "Ion Creanga",
+      "phone": "+322222222"
+    },
+    {
+      "id": 3,
+      "name": "Vasile Alecsandri",
+      "phone": "+37333333333"
+    }
+  ]
+}
